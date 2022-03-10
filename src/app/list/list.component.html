@@ -1,0 +1,21 @@
+<div>ListItems</div>
+<div class="list-items">
+  <table class="list-items">
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>category</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let listItem of listItems | async">
+      <td>{{ listItem.id }}</td>
+      <td>{{ listItem.name }}</td>
+      <td>{{ listItem.category }}</td>
+      <td class="stacked_icon">
+          <i class="material-icons red medium">woman</i>
+          <i class="material-icons red larger">do_not_disturb</i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
